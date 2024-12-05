@@ -1,0 +1,23 @@
+@page
+@model CRUD_C_.Pages.Products.Delete
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="ax-auto rounded-border p-4" style="width: 400px">
+    <h2 class="text-center mb-3">Deletar Produto</h2>
+    <hr />
+    <p>Você tem certeza que deseja deletar o produto?</p>
+    <p>Produto ID=@Request.Query["id"]</p>
+    <hr />
+    <form method="post">
+        <div class="row">
+            <div class="col-sm-6 d-grid">
+                <button type="submit" class="btn btn-danger">Deletar</button>
+            </div>
+            <div class="col-sm-6 d-grid">
+                <a class="btn btn-outline-danger" href="/Products/Index">Cancelar</a>
+            </div>
+        </div>
+    </form>
+</div>

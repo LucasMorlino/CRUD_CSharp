@@ -1,0 +1,42 @@
+@page
+@model CRUD_C_.Pages.Products.Index
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="=text-center mb-3">Lista de Produtos</h2>
+
+<a class="btn btn-primary mb-3" href="/Products/Create">Novo Produto</a>
+
+<table style="padding: 8px;">
+    <thead style="padding: 8px">
+        <tr style="padding: 8px;">
+            <th style="padding: 8px">ID</th>
+            <th style="padding: 8px">Produto</th>
+            <th style="padding: 8px">Empresa</th>
+            <th style="padding: 8px">Email</th>
+            <th style="padding: 8px">Telefone</th>
+            <th style="padding: 8px">Quantidade</th>
+            <th style="padding: 8px">Data de criação</th>
+            <th style="padding: 8px">Action</th>
+        </tr>
+    </thead>
+    <tbody style="padding: 8px">
+        @foreach(var product in Model.ProductsList){
+            <tr style="padding: 8px">
+                <td style="padding: 8px">@product.id</td>
+                <td style="padding: 8px">@product.productName</td>
+                <td style="padding: 8px">@product.enterpriseName</td>
+                <td style="padding: 8px">@product.email</td>
+                <td style="padding: 8px">@product.phone</td>
+                <td style="padding: 8px ;">@product.amont</td>
+                <td style="padding: 8px">@product.createdAt</td>
+                <td style="white-space:nowrap padding: 8px">
+                    <a class="btn btn-primary btn-sm" href="/Products/Edit?id=@product.id">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/Products/Delete?id=@product.id">Deletar</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
