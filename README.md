@@ -47,3 +47,7 @@ Substitua GUERRERO-PC\\SQLSERVER pelo nome do servidor SQL criado no seu ambient
 ### 2. Criação da Tabela
 
 Use o arquivo CREATE TABLE products.sql para criar a tabela products no banco de dados. Este arquivo contém o script SQL necessário para configurar a tabela, facilitando a preparação do ambiente de testes.
+
+### 3. Para Iniciar o Código 
+
+Abra um terminal e assim digite dotnet run e assim irá compilar dando um link do localhost e assim acessando já poderá usar o sistema.
