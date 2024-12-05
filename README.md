@@ -8,7 +8,7 @@ Este é um projeto de **CRUD** (Create, Read, Update, Delete) desenvolvido em **
 
 ## Estrutura do Projeto
 
-O projeto organiza as funcionalidades do CRUD dentro da pasta **Products**, contendo 8 arquivos no total, organizados em pares (C# e HTML):
+O projeto organiza as funcionalidades do CRUD dentro da pasta **Pages** e depois na pasta **Products**, contendo 8 arquivos no total, organizados em pares (C# e HTML):
 
 ### Funcionalidades:
 
